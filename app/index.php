@@ -18,7 +18,7 @@
 <body>
 	<img id="logo" src="Container_Automation.jpg" />
 	<h1><?php echo "Hello ".($_ENV["NAME"]?$_ENV["NAME"]:"Docker!")."!"; ?></h1>
-	<?php if($_ENV["HOSTNAME"]) {?><h3>My hostname is <?php echo $_ENV["HOSTNAME"]; ?></h3><?php } ?>
+	<?php if($_ENV["HOSTNAME"]) {?><h3>My hostname iis <?php echo $_ENV["HOSTNAME"]; ?></h3><?php } ?>
 	<?php
 	$links = [];
 	foreach($_ENV as $key => $value) {
